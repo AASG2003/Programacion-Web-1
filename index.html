@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="author" content="Alberto Soria">
+  <meta name="description" content="Pagina web promocional Ferreteria Alcazar">
+  <meta name="keywords" content="Ferreteria, taladro, buenServicio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- titulo -->
+  <title>Ferreteria Alcazar</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/thumbs/hammer-icon/hammer-icon-6.png">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-- css -->
+  <link href="styles/index-style.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <a class="navbar-brand" href="#">
+          <img src="images/f_3.png" width="100" alt="Logo de la pagina web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Interacción</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="Compras row">
+  <div class="col-12 col-md-9  productos">
+    <div class="d-flex flex-column container text-center">
+      <div class="row">
+        <div class="producto col-12 col-md-6 col-lg-4">
+          <div class="card ">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button onclick = "anyadirProductoAlCarrito(event)" class="btn btn-primary" marcador="1">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto col-12 col-md-6 col-lg-4">
+          <div class="card ">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button onclick = "anyadirProductoAlCarrito(event)" class="btn btn-primary" marcador="2">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto col-12 col-md-6 col-lg-4">
+          <div class="card ">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button onclick = "anyadirProductoAlCarrito(event)" class="btn btn-primary" marcador="3">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3 carrito">
+    <h2>Carrito</h2>
+      <!-- Elementos del carrito -->
+      <ul id="carrito" class="list-group"></ul>
+      <hr>
+      <!-- Precio total -->
+      <p class="text-right">Total: <span id="total"></span>Bs.</p>
+      <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+  </div>
+  </section>
+  <script src="js/index-js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
