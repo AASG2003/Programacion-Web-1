@@ -11,9 +11,11 @@
 
 
 /* estilos generales */
+body{
+    background-color: #FFF7E9;
+}
 section{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -73,8 +75,13 @@ h1{
 .carrito{
     padding: 10px;
     height: 100%;
-    margin: 0px 0px 10px 0px;
+    margin: 10px;
     background-color: #FFF7E9;
+}
+
+.carrito *{
+    margin: 10px;
+    padding: 10px;
 }
 
 .productos .card{
@@ -99,4 +106,6 @@ h1{
         display: none;
     }
 }
+
+
 
