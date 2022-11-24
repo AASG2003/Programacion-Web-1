@@ -1,7 +1,7 @@
 /* estilos del navbar */
 .navbar{
     padding: 2rem;
-    background-color: #FFF7E9;
+    background-color: #F1F8FD;
 }
 
 .navbar-collapse{
@@ -12,7 +12,7 @@
 
 /* estilos generales */
 body{
-    background-color: #FFF7E9;
+    background-color: #F1F8FD;
 }
 section{
     display: flex;
@@ -68,15 +68,16 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 0px 0px 10px 0px;
-    background-color: #FFAA4C;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #035397;
 }
 
 .carrito{
     padding: 10px;
     height: 100%;
     margin: 10px;
-    background-color: #FFF7E9;
+    background-color: #F1F8FD;;
 }
 
 .carrito *{
@@ -88,6 +89,7 @@ h1{
     border: 100px;
     border-color: #FFAA4C;
     padding: 10px;
+    margin: 10px;
     border-radius: 10px;
     display: block;
     transition: all 0.2s ease-in;
@@ -98,7 +100,9 @@ h1{
     margin-bottom: 10px;
 }
 
-
+.btn-primary{
+    background-color: #001E6C;
+}
 
 /* responsive */
 @media screen and (max-width: 767px) {

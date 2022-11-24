@@ -1,0 +1,138 @@
+/* estilos del navbar */
+.navbar{
+    padding: 2rem;
+    background-color: transparent;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* estilos generales */
+body{
+    background-image: url("../images/background-img.png");
+    background-size: cover;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'Passion One', cursive;
+    color: #F1F8FD;
+    text-align: center;
+    font-size: 8.2rem;
+    padding: 150px;
+
+}
+
+.tituloLP{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.dark-section{
+    background-color: #1b1b32;
+    color: white;
+}
+
+.section-light{
+    color: black;
+    background-color: white;
+}
+
+.title-section{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.description-section{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.text-section{
+    font-size: 1.2rem;
+}
+
+.black-text{
+    color: black;
+}
+
+.white-text{
+    color: white;
+}
+
+/* compras y carrito */
+
+.compras{
+    display: flex;
+}
+
+.productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: #FFAA4C;
+}
+
+.carrito{
+    padding: 10px;
+    height: 100%;
+    margin: 10px;
+    background-color: #FFF7E9;
+}
+
+.carrito *{
+    margin: 10px;
+    padding: 10px;
+}
+
+.productos .card{
+    border: 100px;
+    border-color: #FFAA4C;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease-in;
+}
+
+.producto{
+    align-items: stretch;
+    margin-bottom: 10px;
+}
+
+.nav-link{
+    color: #F1F8FD;
+}
+
+.activo{
+    color: #b6b6b6;
+}
+
+.nav-link:hover{
+    color: #808080;
+}
+.activo:hover{
+    color: #b6b6b6;
+}
+
+
+/* responsive */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+
+
+

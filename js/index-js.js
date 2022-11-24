@@ -107,7 +107,7 @@ function renderizarCarrito() {
         miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
         // Boton de borrar
         const miBoton = document.createElement('button');
-        miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+        miBoton.classList.add('btn', 'btn-primary', 'mx-5');
         miBoton.textContent = 'X';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
