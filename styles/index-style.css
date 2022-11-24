@@ -1,7 +1,7 @@
 /* estilos del navbar */
 .navbar{
     padding: 2rem;
-    background-color: #F1F8FD;
+    background-color: white;
 }
 
 .navbar-collapse{
@@ -12,7 +12,7 @@
 
 /* estilos generales */
 body{
-    background-color: #F1F8FD;
+    background-color: white;
 }
 section{
     display: flex;
@@ -77,7 +77,8 @@ h1{
     padding: 10px;
     height: 100%;
     margin: 10px;
-    background-color: #F1F8FD;;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .carrito *{
@@ -104,6 +105,9 @@ h1{
     background-color: #001E6C;
 }
 
+.card-img-top{
+    border-radius: 10px;
+}
 /* responsive */
 @media screen and (max-width: 767px) {
     .navbar-brand{
