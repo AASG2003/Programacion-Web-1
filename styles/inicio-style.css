@@ -126,7 +126,9 @@ section{
     color: #b6b6b6;
 }
 
-
+.pie-de-pagina{
+    background-color: white;
+}
 /* responsive */
 @media screen and (max-width: 767px) {
     .navbar-brand{

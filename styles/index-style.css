@@ -108,6 +108,9 @@ h1{
 .card-img-top{
     border-radius: 10px;
 }
+.accordion-body{
+    background-color: #035397;
+}
 /* responsive */
 @media screen and (max-width: 767px) {
     .navbar-brand{
