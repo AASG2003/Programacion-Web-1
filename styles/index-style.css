@@ -111,6 +111,15 @@ h1{
 .accordion-body{
     background-color: #035397;
 }
+
+.tableProp{
+    width: 100%;
+ position: relative;
+}
+
+.tableProp tr{
+    width: 100%;
+}
 /* responsive */
 @media screen and (max-width: 767px) {
     .navbar-brand{

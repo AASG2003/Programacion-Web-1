@@ -53,7 +53,7 @@
   </nav>
 
   <section class="Compras row">
-    <div class="col-12 col-xxl-8 productos">
+    <div class="col-12 col-xl-8 productos">
       <div class="accordion container-fluid" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -64,7 +64,7 @@
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <div class="d-flex flex-column container text-center">
-                <div class="row">
+                <div class="row" id = "PrimeraCategoria">
                   <div class="producto col-12 col-md-6 col-lg-4">
                     <div class="card ">
                       <img src="images/CIDLI2003.jpg" class="card-img-top" alt="Imagen taladro">
@@ -150,16 +150,16 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-xxl-3 carrito">
+    <div class="col-12 col-xl-3 carrito">
       <h2>Carrito</h2>
         <!-- Elementos del carrito -->
-        <ul id="carrito" class="list-group"></ul>
+        <!-- tabla -->
+        <table id="carritoTabla" class="tableProp"></table>
         <hr>
-        <!-- Precio total -->
         <p class="text-right">Total: <span id="total"></span>Bs.</p>
         <button id="boton-vaciar" class="btn btn-primary">Vaciar</button>
     </div>
-    </section>
+  </section>
 
 
   <!-- footer -->

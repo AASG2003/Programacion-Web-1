@@ -18,53 +18,60 @@ const baseDeDatos = [
 ];
 
 let carrito = [];
+let carritoTabla = [];
 const divisa = 'Bs.';
 const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
+const DOMcarritoTabla = document.querySelector("#carritoTabla");
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 
 function anyadirProductoAlCarrito(evento) {
-    carrito.push(evento.target.getAttribute('marcador'))
-    renderizarCarrito();
+    carritoTabla.push(evento.target.getAttribute('marcador'));
+    renderizarCarritoTabla();
 
 }
 
-function renderizarCarrito() {
-    DOMcarrito.textContent = '';
-    const carritoSinDuplicados = [...new Set(carrito)];
+// Crear carrito con tables
+function renderizarCarritoTabla() {
+    DOMcarritoTabla.textContent = '';
+    const carritoSinDuplicados = [...new Set(carritoTabla)];
     carritoSinDuplicados.forEach((item) => {
         const miItem = baseDeDatos.filter((itemBaseDatos) => {
             return itemBaseDatos.id === parseInt(item);
         });
-        const numeroUnidadesItem = carrito.reduce((total, itemId) => {
+        const numeroUnidadesItem = carritoTabla.reduce((total, itemId) => {
             return itemId === item ? total += 1 : total;
         }, 0);
-        const miNodo = document.createElement('li');
-        miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
-        const miBoton = document.createElement('button');
-        miBoton.classList.add('btn', 'btn-primary', 'mx-5');
-        miBoton.textContent = 'X';
-        miBoton.style.marginLeft = '1rem';
-        miBoton.dataset.item = item;
-        miBoton.addEventListener('click', borrarItemCarrito);
-        miNodo.appendChild(miBoton);
-        DOMcarrito.appendChild(miNodo);
+        const fila = document.createElement('tr');
+        const colDatos = document.createElement('td');
+        const colBoton = document.createElement('td');
+        colBoton.style.textAlign = 'right';
+        colDatos.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
+        const miBotont = document.createElement('button');
+        miBotont.classList.add('btn', 'btn-primary');
+        miBotont.textContent = 'X';
+        miBotont.dataset.item = item;
+        miBotont.addEventListener('click', borrarItemCarrito);
+        colBoton.appendChild(miBotont);
+        fila.appendChild(colDatos);
+        fila.appendChild(colBoton);
+        DOMcarritoTabla.appendChild(fila);
+
     });
     DOMtotal.textContent = calcularTotal();
 }
 
 function borrarItemCarrito(evento) {
     const id = evento.target.dataset.item;
-    carrito = carrito.filter((carritoId) => {
+    carritoTabla = carritoTabla.filter((carritoId) => {
         return carritoId !== id;
     });
-    renderizarCarrito();
+    renderizarCarritoTabla();
 }
 
 function calcularTotal() {
-    return carrito.reduce((total, item) => {
+    return carritoTabla.reduce((total, item) => {
         const miItem = baseDeDatos.filter((itemBaseDatos) => {
             return itemBaseDatos.id === parseInt(item);
         });
@@ -74,10 +81,9 @@ function calcularTotal() {
 
 
 function vaciarCarrito() {
-    carrito = [];
-    renderizarCarrito();
+    carritoTabla = [];
+    renderizarCarritoTabla();
 }
 
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
-
-renderizarCarrito();
+renderizarCarritoTabla();

@@ -11,10 +11,6 @@
 
 
 /* estilos generales */
-body{
-    background-image: url("../images/background-img.png");
-    background-size: cover;
-}
 section{
     display: flex;
     justify-content: center;
@@ -30,6 +26,8 @@ section{
 }
 
 .tituloLP{
+    background-image: url("../images/background-img.png");
+    background-size: cover;
     display: flex;
     align-items: center;
     text-align: center;
@@ -128,6 +126,16 @@ section{
 
 .pie-de-pagina{
     background-color: white;
+}
+
+.carusel{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    height: 40%;
 }
 /* responsive */
 @media screen and (max-width: 767px) {
