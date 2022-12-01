@@ -1,28 +1,18 @@
-const formulario = document.querySelector("#formulario")
-
-formulario.addEventListener( "submit", validarform )
-
-function validarform(e){
-    e.preventDefault()
-    const nom = document.querySelector('#nombre').value
-    const email = document.querySelector('#email').value
-    const city = document.querySelector('#city').value
-    const elecc = document.querySelector('#elecc').value
-    const valor = document.querySelector('#valor').value
-    const respuesta = document.querySelector('#resp')
-    respuesta.textContent = 'Nombre cliente: '+nom+" email: "+email+" ciudad: "+city+" beneficio elegido: "+elecc+" Donacion: "+valor 
+function validarform2(){
+    const nom = document.getElementById("nombre").value;
+    const elecc = document.getElementById('elecc1').value;
+    const elecc2 = document.getElementById('elecc2').value;
+    const area = document.getElementById('area').value;
+    var textContent = 'Gracias por su comentario: ' + nom + " sus eleccion 1 fue: " + elecc + " su segunda eleccion: " + elecc2 + " y su recomendacion fue: "+area;
+    if(elecc != "Eliga lo bueno que tenemos" && elecc2 != "¿Que tan desconforme se siente?" && area != ""){
+        window.alert(textContent);
+        window.location.reload();
+    } else {
+        window.alert("Rellene los campos por favor");
+    }
 }
 
-const formulario2 = document.querySelector("#formulario2")
-
-formulario2.addEventListener( "submit", validarform2 )
-
-function validarform2(x){
-    x.preventDefault()
-    const nom = document.querySelector('#nombre').value
-    const elecc = document.querySelector('#elecc1').value
-    const elecc2 = document.querySelector('#elecc2').value
-    const area = document.querySelector('#area').value
-    const respuesta2 = document.querySelector('#respuesta2')
-    respuesta2.textContent = 'Gracias por su comentario: '+nom+" sus eleccion 1 fue: "+elecc+" su segunda eleccion: +"+elecc2+" y su recomendacion fue: "+area
+function enviarCorreo(){
+    window.location.reload();
+    window.alert("Nos contactaremos contigo");
 }

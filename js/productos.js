@@ -224,6 +224,7 @@ const productosHerramientasManualesDB = [
         ]
     }
 ];
+const SONIDOCOMPRA = new Audio('../audios/cash-register-fake-88639.mp3')
 
 const DOMPrimeraCategoria = document.querySelector("#PrimeraCategoria");
 const DOMSegundoCategoria = document.querySelector("#SegundaCategoria");
@@ -351,6 +352,7 @@ const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 
 function anyadirProductoAlCarrito(evento) {
     carritoTabla.push(evento.target.getAttribute('marcador'));
+    SONIDOCOMPRA.play();
     renderizarCarritoTabla();
 
 }
@@ -400,6 +402,11 @@ function calcularTotal() {
         });
         return total + miItem[0].precio;
     }, 0).toFixed(2);
+}
+
+function enviarCorreo(){
+    window.location.reload();
+    window.alert("Nos contactaremos contigo");
 }
 
 

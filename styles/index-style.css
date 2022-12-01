@@ -2,6 +2,7 @@
 .navbar{
     padding: 2rem;
     height: 100px;
+    background-color: #FFC60B;
 }
 
 .navbar-collapse{
@@ -11,13 +12,19 @@
 
 
 /* estilos generales */
+body{
+    background-color: #FEFFDB;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+}
+
 section{
     display: flex;
     justify-content: center;
 }
 
 .titulo{
-    font-family: 'Passion One', cursive;
+    font-family: 'PT Serif', serif;
     color: #F1F8FD;
     text-align: center;
     font-size: 8.2rem;
@@ -35,45 +42,14 @@ section{
     justify-content: center;
 }
 
-.dark-section{
-    background-color: #1b1b32;
-    color: white;
-}
-
-.section-light{
-    color: black;
-    background-color: white;
-}
-
-.title-section{
-    font-size: 2rem;
-    padding: 15px 0;
-    font-family: 'Rubik Dirt', cursive;
-}
-
-.description-section{
-    font-size: 1.2rem;
-    color: #584e4e;
-}
-
-.text-section{
-    font-size: 1.2rem;
-}
 
 .black-text{
     color: black;
 }
 
-.white-text{
-    color: white;
-}
-
-.activo{
-    color: #b6b6b6;
-}
-
 .pie-de-pagina{
-    background-color: white;
+    background-color: #444444;
+    color: white;
 }
 
 .carusel{
