@@ -16,7 +16,7 @@ const DBGenerica = [
         id: 2,
         nombre: "CRHLI2201",
         precio: 1230,
-        img: "CRHLI2201.jpg",
+        img: "crhli2201.jpg",
         descripcion: "Rotomartillo bateria de 20v individual",
         datos:[
             "Voltage: 20v",
@@ -128,7 +128,7 @@ const productosHerramientasElectricasDB = [
         id: 2,
         nombre: "CRHLI2201",
         precio: 1230,
-        img: "CRHLI2201.jpg",
+        img: "crhli2201.jpg",
         descripcion: "Rotomartillo bateria de 20v individual",
         datos:[
             "Voltage: 20v",
