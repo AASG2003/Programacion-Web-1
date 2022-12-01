@@ -1,7 +1,8 @@
 body{
-    background-color: orange;
+    background-color: white;
 }
 .imagen>img{
+    padding: 20px;
     width: 100%;
     height: 100%;
 }
@@ -10,7 +11,16 @@ body{
     height: 50px;
     width: 90px;
 }
+.navbar{
+    background-color: white;
+}
 
 .pie-de-pagina{
     background-color: white;
+}
+
+#formulario2{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }

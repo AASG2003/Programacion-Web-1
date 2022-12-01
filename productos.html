@@ -18,12 +18,11 @@
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <!-- css -->
-  <link href="styles/index-style.css" rel="stylesheet">
+  <link href="styles/productos-style.css" rel="stylesheet">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Rubik+Dirt&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,10 +39,10 @@
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
+            <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="forms.html">Interacción</a>
@@ -53,52 +52,81 @@
     </div>
   </nav>
 
-  <!-- bienvenida -->
-  <div class="tituloLP">
-    <div class="titulo">FERRETERIA ALCAZAR</h1></div>
-  </div>
-
-  <div class="container-fluid acercaDe">
-    <h3>
-
-    </h3>
-
-  </div>
-
-  <!-- carrusel -->
-  <div class="carusel container">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="images/car1.jpg" class="d-block w-100" alt="...">
+  <section class="Compras row">
+    <div class="col-12 col-xl-8 productos">
+      <div class="accordion container-fluid" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Herramientas Electricas
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-flex flex-column container text-center">
+                <div class="row" id = "PrimeraCategoria">
+                  <!-- renderizado de productos -->
+                </div>  
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/car2.jpg" class="d-block w-100" alt="...">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Herramientas Manuales
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="d-flex flex-column container text-center">
+                    <div class="row" id = "SegundaCategoria">
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item"  data-bs-interval="2000">
-          <img src="images/car3.jpg" class="d-block w-100" alt="...">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Categoria 3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-flex flex-column container text-center">
+                <div class="row" id = "SegundaCategoria">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  </div>
+    <div class="col-12 col-xl-3 carrito">
+      <h2>Carrito</h2>
+        <!-- Elementos del carrito -->
+        <!-- tabla -->
+        <table id="carritoTabla" class="tableProp"></table>
+        <hr>
+        <p class="text-right">Total: <span id="total"></span>Bs.</p>
+        <button id="boton-vaciar" class="btn btn-primary">Vaciar</button>
+    </div>
+  </section>
+
 
   <!-- footer -->
-  <div class="container-fluid col-12 pie-de-pagina">
+  <div class="container-fluid col-12">
     <footer class="py-3">
       <div class="row">
         <div class="col-6 col-md-6 mb-3">
           <h5>Productos</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="productos.html#primeraCategoria" class="nav-link p-0 text-muted">Categoria 1</a></li>
-            <li class="nav-item mb-2"><a href="productos.html#segundaCategoria" class="nav-link p-0 text-muted">Categoria 2</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Categoria 1</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Categoria 2</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Categoria 3</a></li>
           </ul>
         </div>
@@ -126,6 +154,8 @@
       </div>
     </footer>
   </div>
+  </section>
+  <script src="js/productos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>

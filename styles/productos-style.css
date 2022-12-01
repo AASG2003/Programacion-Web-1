@@ -1,7 +1,7 @@
 /* estilos del navbar */
 .navbar{
     padding: 2rem;
-    background-color: transparent;
+    background-color: white;
 }
 
 .navbar-collapse{
@@ -11,28 +11,17 @@
 
 
 /* estilos generales */
+body{
+    background-color: white;
+}
 section{
     display: flex;
     justify-content: center;
 }
 
-.titulo{
-    font-family: 'Passion One', cursive;
-    color: #F1F8FD;
-    text-align: center;
-    font-size: 8.2rem;
-    padding: 150px;
-
-}
-
-.tituloLP{
-    background-image: url("../images/background-img.png");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-items: center;
-    justify-content: center;
+h1{
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
 }
 
 .dark-section{
@@ -79,15 +68,17 @@ section{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 0px 0px 10px 0px;
-    background-color: #FFAA4C;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #035397;
 }
 
 .carrito{
     padding: 10px;
     height: 100%;
     margin: 10px;
-    background-color: #FFF7E9;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .carrito *{
@@ -99,6 +90,7 @@ section{
     border: 100px;
     border-color: #FFAA4C;
     padding: 10px;
+    margin: 10px;
     border-radius: 10px;
     display: block;
     transition: all 0.2s ease-in;
@@ -109,33 +101,28 @@ section{
     margin-bottom: 10px;
 }
 
-.nav-link{
-    color: #F1F8FD;
+.btn-primary{
+    background-color: #001E6C;
 }
 
-.activo{
-    color: #b6b6b6;
-}
-
-.nav-link:hover{
-    color: #808080;
-}
-.activo:hover{
-    color: #b6b6b6;
-}
-
-.pie-de-pagina{
-    background-color: white;
-}
-
-.carusel{
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+.card-img-top{
     border-radius: 10px;
-    padding: 20px;
-    width: 60%;
-    height: 40%;
+}
+.accordion-body{
+    background-color: #035397;
+}
+
+.tableProp{
+    width: 100%;
+ position: relative;
+}
+
+.tableProp tr{
+    width: 100%;
+}
+
+.imagen-carrito{
+    max-height: 200px;
 }
 /* responsive */
 @media screen and (max-width: 767px) {
