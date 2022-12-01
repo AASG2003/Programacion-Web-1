@@ -1,6 +1,7 @@
 /* estilos del navbar */
 .navbar{
     padding: 2rem;
+    height: 100px;
 }
 
 .navbar-collapse{

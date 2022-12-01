@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: #FFF7E9;
 }
 .imagen>img{
     padding: 20px;
@@ -12,11 +12,12 @@ body{
     width: 90px;
 }
 .navbar{
-    background-color: white;
+    background-color: #FFAA4C;
+    height: 100px;
 }
 
 .pie-de-pagina{
-    background-color: white;
+    background-color: #FFAA4C;
 }
 
 #formulario2{
