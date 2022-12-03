@@ -1,13 +1,6 @@
 /* estilos del navbar */
 .navbar{
-    padding: 2rem;
-    height: 100px;
     background-color: #FFC60B;
-}
-
-.navbar-collapse{
-    align-items: center;
-    justify-content: space-between;
 }
 
 
@@ -20,11 +13,15 @@ body{
 
 section{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .titulo{
     font-family: 'PT Serif', serif;
+    display: flex;
     color: #F1F8FD;
     text-align: center;
     font-size: 8.2rem;
@@ -36,6 +33,7 @@ section{
     background-image: url("../images/background-img.png");
     background-size: cover;
     display: flex;
+    position: relative;
     align-items: center;
     text-align: center;
     justify-items: center;
@@ -65,6 +63,12 @@ section{
 @media screen and (max-width: 767px) {
     .navbar-brand{
         display: none;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .titulo{
+        font-size: 5rem;
     }
 }
 
