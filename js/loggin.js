@@ -30,7 +30,8 @@ function validar(){
 
     if(!us && al){
         window.alert("Usuario no encontrado");
-    } else if (us){
+    } else if (us)
+    {
         window.alert("Ingresando a la pagina");
         let targetURL = 'index.html';
         let newURL = document.createElement('a');
