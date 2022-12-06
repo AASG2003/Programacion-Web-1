@@ -16,6 +16,7 @@ function validar(){
     const usuario = document.getElementById('usuario').value;
     const con = document.getElementById('con').value;
     var us = false;
+    var al = true;
     usuarios.forEach(usEx => {
         if(usuario == usEx.usuario){
             if(con == usEx.contrasena){
@@ -23,14 +24,13 @@ function validar(){
             } else {
                 window.alert("Contraseña Incorrecta");
             }
-        } else {
-            window.alert("Usuario no encontrado");
+            al = false;
         }
     });
 
-    if(!us){
+    if(!us && al){
         window.alert("Usuario no encontrado");
-    } else {
+    } else if (us){
         window.alert("Ingresando a la pagina");
         let targetURL = 'index.html';
         let newURL = document.createElement('a');
