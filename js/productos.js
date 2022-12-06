@@ -224,7 +224,7 @@ const productosHerramientasManualesDB = [
         ]
     }
 ];
-const SONIDOCOMPRA = new Audio('../audios/cash-register-fake-88639.mp3')
+const SONIDOCOMPRA = new Audio('audios/cash-register-fake-88639.mp3');
 
 const DOMPrimeraCategoria = document.querySelector("#PrimeraCategoria");
 const DOMSegundoCategoria = document.querySelector("#SegundaCategoria");
