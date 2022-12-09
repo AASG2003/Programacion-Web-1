@@ -21,11 +21,10 @@ section{
 
 .titulo{
     font-family: 'PT Serif', serif;
-    display: flex;
     color: #F1F8FD;
     text-align: center;
     font-size: 8.2rem;
-    padding: 150px;
+    padding: 150px 20px 150px 20px;
 
 }
 
@@ -114,4 +113,5 @@ section{
         width: 400px; 
     }
 }
+
 
