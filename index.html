@@ -29,7 +29,7 @@
 
 <body>
   <!-- barra de navegacion -->
-  <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
     </div>
 
     <!-- carrusel -->
-    <div class="carusel container">
+    <div class="carusel container col-12">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
@@ -84,8 +84,45 @@
         </button>
       </div>
     </div>
-  </section>
 
+  </section>
+  <div class="container-fluid info">
+    <div class="info-titulo">
+      Acerca de nosotros
+    </div>
+    <div class="row text-center align-items-center justify-content-center">
+      <div class="info-descripcion col-6 text-center">
+        Somos una Ferreteria que ofrece distintos productos, desde equipo domestico, herramientas para reparaciones pequeñas destornilladores, martillos y pinzas, hasta equipo industrial para distintas necesidades, por menor y al mayor, ventas simples y cotizaciones.
+      </div>
+    </div>
+  </div>
+
+  <div class="container nosotros">
+    <div class="row">
+      <div class="card text-black bg-warning mb-4 col-4">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Warning card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-black bg-warning mb-4 col-4">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Warning card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-black bg-warning mb-4 col-4">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Warning card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!-- footer -->
   <div class="container-fluid col-12 pie-de-pagina">
     <footer class="py-3">

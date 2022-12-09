@@ -56,9 +56,46 @@ section{
     justify-content: center;
     border-radius: 10px;
     padding: 20px;
-    width: 50%;
+    width: 800px;
 }
 
+.info{
+    background-color: #444444;
+}
+
+.info-titulo{
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    color: #F1F8FD;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.info-descripcion{
+    font-size: 1.2rem;
+    font-family: 'PT Serif', serif;
+    color: #F1F8FD;
+    text-align: center;
+    padding: 20px;
+}
+
+.nosotros{
+    padding: 20px;
+}
+
+.nosotros .row{
+    justify-content: space-evenly;
+}
+.nosotros .card{
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.bg-warning{
+    background-color: #FFC60B;
+}
 /* responsive */
 @media screen and (max-width: 767px) {
     .navbar-brand{
@@ -68,9 +105,13 @@ section{
 
 @media screen and (max-width: 812px) {
     .titulo{
-        font-size: 5rem;
+        font-size: 3rem;
     }
 }
 
-
+@media screen and (max-width: 576px) {
+    .carusel{
+        width: 400px; 
+    }
+}
 
